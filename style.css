@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.856);
+    border-radius: 10px;
+    /* width: 900px; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box1 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    border-radius: 10px 0 0 10px;
+    gap: 20px;
+    width: 350px;
+}
+
+.box1 .logo {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.logo div i {
+    font-size: 35px;
+    color: rgba(128, 128, 128, 0.856);
+    background: #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 250px;
+    margin: auto;
+}
+
+.form .inputBox {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.inputBox div {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+}
+
+div .input {
+    margin: 20px 0;
+}
+
+.inputBox div input {
+    width: 100%;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 13px;
+    padding: 3px 0;
+}
+
+.inputBox div i {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.856);
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.box div h4 {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: navy;
+}
+
+.box div h4:hover {
+    text-decoration: underline;
+}
+
+.login button {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background: navy;
+    width: 80px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login button i {
+    font-size: 15px;
+}
+
+.reg {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.reg p {
+    font-size: 14px;
+    color: #675;
+}
+
+.reg button {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: navy;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.reg button i {
+    font-size: 17px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    /* gap: 0 10px; */
+    margin: 20px 0;
+}
+
+.images div button {
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 130px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgba(128, 128, 128, 0.856);
+}
+
+.tn {
+    background: red;
+}
+
+.box2 {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 600px;
+    position: relative;
+    /* background: rgba(128, 128, 128, 0.856); */
+    /* padding: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box2 h6 {
+    position: absolute;
+    /* top: 10px; */
+    right: 15px;
+    font-size: 20px;
+    font-weight: normal;
+    background: #ccc;
+    padding: 0 8px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+
+.box2 div {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    margin: 5px 0;
+}
+
+.box2 div div i {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+.box2 div div img {
+    width: 30px;
+    /* height: 100px; */
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.box2 div div h4 {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    cursor: auto;
+}
+
+.box2 div div h4 span {
+    cursor: pointer;
+    color: red;
+}
+
+
+@media (max-width: 1000px) {
+
+    .container {
+        justify-content: center;
+        /* width: 900px; */
+        width: 70vmin;
+        background: none;
+        width: 500px;
+        margin: 20px;
+    }
+
+
+    .box2 h6 {
+        display: block;
+    }
+
+    .box1 {
+        width: 400px;
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .box2 {
+        width: 500px;
+        background: rgba(128, 128, 128, 0.856);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .logo div i {
+        display: block;
+    }
+
+    .inputBox div input {
+        width: 400px;
+        width: 450px;
+    }
+
+    .images {
+        justify-content: space-around;
+        width: 100%;
+        width: 450px;
+    }
+
+    .images div button {
+        width: 150px;
+        display: block;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .container {
+        justify-content: center;
+        /* width: 900px; */
+        width: 90vmin;
+        margin: 20px auto;
+        background: none;
+        width: 500px;
+
+    }
+
+    .box2 h6 {
+
+        display: block;
+    }
+
+    .logo div i {
+        display: block;
+    }
+
+    .box1 {
+        width: 450px;
+        border-radius: 10px;
+    }
+
+    .box2 {
+        width: 450px;
+        background: rgba(128, 128, 128, 0.856);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .form {
+        width: 95%;
+    }
+
+    .inputBox div input {
+        width: 450px;
+    }
+
+    .images {
+        justify-content: space-around;
+        width: 100%;
+        width: 400px;
+    }
+
+    .images div button {
+        width: 150px;
+        display: block;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .container {
+        justify-content: center;
+        /* width: 900px; */
+        width: 90vmin;
+        margin: 20px auto;
+        background: none;
+        /* width: 350px; */
+
+    }
+
+    .logo div i {
+        display: block;
+    }
+
+    .box2 h6 {
+
+        display: block;
+    }
+
+    .box1 {
+        width: 380px;
+        border-radius: 10px;
+    }
+
+    .box2 {
+        width: 380px;
+        background: rgba(128, 128, 128, 0.856);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .form {
+        width: 95%;
+    }
+
+    .inputBox div input {
+        width: 380px;
+    }
+
+    .images {
+        justify-content: space-between;
+        width: 90%;
+        /* width: 330px; */
+    }
+
+    .images div button {
+        width: 150px;
+        display: block;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 350px) {
+
+    .container {
+        justify-content: center;
+        /*  width: 900px;  */
+        width: 90vmin;
+        margin: 20px auto;
+        align-items: center;
+        background: none;
+    }
+
+    .logo div i {
+        display: block;
+    }
+
+    .box1 {
+        /* width: 100%; */
+        /* width: 90vmin; */
+        width: 300px;
+        border-radius: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .box2 {
+        width: 300px;
+        background: rgba(128, 128, 128, 0.856);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .box2 h6 {
+
+        display: block;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .logo div img {
+        width: 150px;
+    }
+
+    .login img {
+        width: 100px;
+    }
+
+    .form {
+        width: 70%;
+        width: 270px;
+    }
+
+    .inputBox {
+        width: 280px;
+    }
+
+    .inputBox div input {
+        /* width: 300px; */
+        width: 100%;
+    }
+
+    .images {
+        justify-content: space-around;
+        width: 100%;
+        /* width: 400px; */
+    }
+
+    .images div button {
+        width: 120px;
+        display: block;
+    }
+
+    .inputBox div {
+        width: 100%;
+    }
+
+    .inputBox div input {
+        /*  width: 400px;  */
+        /*  width: 350px;  */
+        width: 100%;
+    }
+
+    .images {
+        justify-content: space-around;
+        width: 100%;
+        gap: 0 10px;
+        /* width: 280px; */
+    }
+
+    .box2 {
+        display: none;
+    }
+
+}
